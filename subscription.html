@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscribe - ShipDecKK</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>ShipDecKK</h1>
+        </div>
+        <nav>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="subscription.html" class="active">Subscribe</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h2>Subscribe to Our Updates</h2>
+            <p>Stay informed about our latest ships, services, and promotions</p>
+        </section>
+
+        <section class="subscription-form">
+            <div class="form-container">
+                <form id="subscribeForm">
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" id="fullName" name="fullName" placeholder="Enter your full name">
+                        <span class="error" id="fullNameError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email address">
+                        <span class="error" id="emailError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="Create a password">
+                        <span class="error" id="passwordError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password">
+                        <span class="error" id="confirmPasswordError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="age">Age</label>
+                        <input type="number" id="age" name="age" placeholder="Enter your age">
+                        <span class="error" id="ageError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Interests (Select all that apply)</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="interests" value="yachts"> Luxury Yachts
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="interests" value="cargo"> Cargo Ships
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="interests" value="liners"> Luxury Liners
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="preferredContact">Preferred Contact Method</label>
+                        <select id="preferredContact" name="preferredContact">
+                            <option value="">Select an option</option>
+                            <option value="email">Email</option>
+                            <option value="phone">Phone</option>
+                            <option value="mail">Mail</option>
+                        </select>
+                        <span class="error" id="preferredContactError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Additional Information</label>
+                        <textarea id="message" name="message" placeholder="Tell us more about your interests or questions"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="terms" name="terms">
+                            I agree to the terms and conditions
+                        </label>
+                        <span class="error" id="termsError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="btn">Subscribe Now</button>
+                    </div>
+                </form>
+            </div>
+            <div class="subscription-benefits">
+                <h3>Benefits of Subscribing</h3>
+                <ul>
+                    <li>Receive exclusive offers and promotions</li>
+                    <li>Get early access to new ship listings</li>
+                    <li>Stay updated on maritime industry news</li>
+                    <li>Invitations to special events and ship viewings</li>
+                    <li>Access to our quarterly maritime newsletter</li>
+                </ul>
+            </div>
+        </section>
+
+        <div id="successMessage" class="success-message">
+            <div class="success-content">
+                <h3>Thank You for Subscribing!</h3>
+                <p>Your subscription has been successfully processed. You will start receiving updates from ShipDecKK soon.</p>
+                <button id="closeSuccess" class="btn">Close</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>ShipDecKK</h3>
+                <p>Your trusted partner in maritime excellence since 2020.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="subscription.html">Subscribe</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: info@shipdeck.com</p>
+                <p>Phone: +62 (777) 123-6969</p>
+                <p>Address: 123 Liyue, Teyvat</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 ShipDecKK. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
